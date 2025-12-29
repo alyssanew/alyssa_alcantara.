@@ -2,9 +2,11 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: #f4f5f7; /* light gray background */
-  color: #1e293b;      /* dark slate gray for main text */
+  background: #f8fafc; /* very light gray */
+  color: #1e293b; /* dark slate gray for text */
   scroll-behavior: smooth;
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 /* Navigation Bar */
@@ -33,21 +35,21 @@ nav ul li {
 nav ul li a {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  color: #1e3a8a; /* dark blue */
+  color: #0f172a; /* navy blue font */
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.05rem;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #2563eb; /* brighter blue on hover */
+  color: #2563eb; /* brighter blue hover */
 }
 
 /* Section Cards */
 .section {
   background: #ffffff;
-  margin: 100px auto 40px auto;
-  padding: 30px;
+  margin: 120px auto 40px auto; /* space for fixed nav */
+  padding: 40px 35px;
   border-radius: 15px;
   max-width: 900px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -64,12 +66,28 @@ nav ul li a:hover {
 /* Header Section */
 .header {
   background: #c7d2fe; /* soft professional blue */
-  color: #1e3a8a;
+  color: #0f172a; /* navy */
   text-align: center;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1e293b;
 }
 
 /* Section Headings */
 .section h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
   margin-top: 0;
   color: #1e3a8a; /* dark blue */
   border-bottom: 2px solid #2563eb;
@@ -81,8 +99,8 @@ nav ul li a:hover {
 /* Paragraphs */
 p {
   color: #334155; /* medium gray */
-  line-height: 1.6;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 /* Lists */
@@ -94,16 +112,18 @@ ul {
 li {
   background: #f1f5f9; /* light card background */
   margin: 10px auto;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 15px 20px;
+  border-radius: 12px;
   width: fit-content;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  color: #1e293b;
 }
 
 /* Project Descriptions */
 .project-desc {
-  color: #475569; /* darker gray for descriptions */
-  font-size: 0.9em;
+  color: #475569; /* gray for description */
+  font-size: 0.95rem;
   margin-top: 5px;
   max-width: 700px;
 }
@@ -113,10 +133,11 @@ li a {
   color: #1e3a8a; /* dark blue for project links */
   font-weight: 600;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 li a:hover {
-  color: #2563eb; /* brighter blue on hover */
+  color: #2563eb; /* bright blue hover */
 }
 
 /* Certificates Layout */
