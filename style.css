@@ -1,18 +1,18 @@
-/* Global Styles */
+/* Global */
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: #f5f5f5;
-  color: #1f2937;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f9; /* light professional gray */
+  color: #1f2937; /* dark gray */
   scroll-behavior: smooth;
 }
 
-/* Navigation Bar */
+/* Navigation bar horizontal */
 nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #1f2937; /* dark professional gray */
+  background-color: #0f172a; /* navy dark */
   padding: 15px 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -21,35 +21,35 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* horizontal */
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #f3f4f6;
-  font-weight: 600;
+  color: #f8fafc; /* off-white */
+  font-weight: 500;
   font-size: 1em;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #4f46e5; /* subtle professional blue */
+  color: #2563eb; /* subtle blue accent */
 }
 
-/* Section Card */
+/* Section card */
 .section {
   background: #ffffff;
-  margin: 100px auto 40px auto;
+  margin: 100px auto 40px auto; /* leave space for nav */
   padding: 30px;
   border-radius: 15px;
   max-width: 900px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -60,17 +60,17 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 
-/* Header section */
+/* Header */
 .header {
-  background: #e0e7ff; /* professional light blue */
-  color: #1f2937;
+  background: #e2e8f0; /* light professional blue-gray */
+  color: #0f172a;
 }
 
-/* Section titles */
+/* Section headings */
 .section h2 {
   margin-top: 0;
-  color: #1e3a8a; /* dark blue */
-  border-bottom: 2px solid #4f46e5;
+  color: #1e40af; /* dark blue */
+  border-bottom: 2px solid #2563eb;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -82,7 +82,7 @@ ul {
 }
 
 li {
-  background: #f9fafb;
+  background: #f1f5f9;
   margin: 10px auto;
   padding: 12px;
   border-radius: 10px;
@@ -93,14 +93,15 @@ li {
 /* Projects description */
 .project-desc {
   font-size: 0.9em;
-  color: #555;
+  color: #4b5563;
   margin-top: 5px;
   max-width: 700px;
 }
 
 /* Certificates layout */
 .certificates img {
-  width: 220px;
+  width: 300px;
+  height: 150px;
   margin: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -112,7 +113,7 @@ li {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Modal for full view */
+/* Modal for certificates */
 .modal {
   display: none;
   position: fixed;
