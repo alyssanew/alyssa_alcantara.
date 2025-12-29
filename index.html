@@ -1,72 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alyssa Mae D. Alcantara | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
-  <h1>Alyssa Mae D. Alcantara</h1>
-  <p>Hello! I am Alyssa, a 4th-year Computer Science Student</p>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills"><i class="fas fa-lightbulb"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-users"></i> Group Projects</a></li>
+      <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
+    </ul>
+  </nav>
 
-  <h2>About Me</h2>
-  <p>School: Laguna State Polytechnic University</p>
-  <p>Major: Intelligent System</p>
+  <!-- Header -->
+  <div class="section header">
+    <h1>Alyssa Mae D. Alcantara</h1>
+    <p>Hello! I am Alyssa, a 4th-year Computer Science Student</p>
+  </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Basic Data Visualization using Excel</li>
-    <li>Creating Technical Documentation</li>
-    <li>Research skills through data collection and analysis</li>
-  </ul>
-<h2>Group Projects</h2>
-<ul>
-  <li>
-    <a href="https://github.com/alyssanew/TOMVTO-Undergraduate-Thesis" target="_blank">
-      TOMVTO-Undergraduate-Thesis
-    </a>
-    <p class="project-desc">
-      A WEB-BASED APPLICATION UTILIZING AN IMAGE-BASED DEEP LEARNING APPROACH IN CLASSIFYING AND PREDICTING TOMATO SEEDS VIABILITY
-    </p>
-  </li>
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>School: Laguna State Polytechnic University</p>
+    <p>Major: Intelligent System</p>
+  </div>
 
-  <li>
-    <a href="https://github.com/alyssanew/Skin-vestigator" target="_blank">
-      Skin-vestigator
-    </a>
-    <p class="project-desc">
-      The project focuses on detecting a predefined set of common skin diseases (chicken skin, pimple etc.) from images taken in controlled environments. 
-      It does not do diagnosis through other medical data or unstructured clinical images
-    </p>
-  </li>
+  <!-- Skills Section -->
+  <div class="section" id="skills">
+    <h2><i class="fas fa-lightbulb"></i> Skills</h2>
+    <ul>
+      <li>Basic Data Visualization using Excel</li>
+      <li>Creating Technical Documentation</li>
+      <li>Research skills through data collection and analysis</li>
+    </ul>
+  </div>
 
-  <li>
-    <a href="https://github.com/alyssanew/Barangay-Calumpang-Clinic-Management-System" target="_blank">
-      Barangay-Calumpang-Clinic-Management-System
-    </a>
-    <p class="project-desc">
-     This project aims to minimize the hassle of the patient and the volunteers in checking and storing 
-      the patient's data in the Brgy. clinic of Calumpang
-    </p>
-  </li>
+  <!-- Group Projects Section -->
+  <div class="section" id="projects">
+    <h2><i class="fas fa-users"></i> Group Projects</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/alyssanew/TOMVTO-Undergraduate-Thesis" target="_blank">
+          TOMVTO-Undergraduate-Thesis
+        </a>
+        <p class="project-desc">
+          A WEB-BASED APPLICATION UTILIZING AN IMAGE-BASED DEEP LEARNING APPROACH IN CLASSIFYING AND PREDICTING TOMATO SEEDS VIABILITY
+        </p>
+      </li>
 
-  <li>
-    <a href="https://github.com/alyssanew/Operating-Rooms-Schedules-Using-Simulation" target="_blank">
-      Operating-Rooms-Schedules-Using-Simulation
-    </a>
-    <p class="project-desc">
-      This simulation project, aimed to model a simplified version of an OR scheduling system to analyze the impact 
-      of varying arrival rates on key performance metrics such as patient waiting times, queue lengths, and resource utilization. 
-    </p>
-  </li>
+      <li>
+        <a href="https://github.com/alyssanew/Skin-vestigator" target="_blank">
+          Skin-vestigator
+        </a>
+        <p class="project-desc">
+          Detects common skin diseases from controlled images using machine learning.
+        </p>
+      </li>
 
-  <li>
-    <a href="https://github.com/alyssanew/Clothing-Shop-with-Pre-order-Function" target="_blank">
-      Clothing-Shop-with-Pre-order-Function
-    </a>
-    <p class="project-desc">
-      An e-commerce clothing shop system featuring a pre-order function
-      and inventory management.
-    </p>
-  </li>
-</ul>
+      <li>
+        <a href="https://github.com/alyssanew/Barangay-Calumpang-Clinic-Management-System" target="_blank">
+          Barangay-Calumpang-Clinic-Management-System
+        </a>
+        <p class="project-desc">
+          Minimizes hassle in checking and storing patient data in Brgy. Calumpang clinic.
+        </p>
+      </li>
+
+      <li>
+        <a href="https://github.com/alyssanew/Operating-Rooms-Schedules-Using-Simulation" target="_blank">
+          Operating-Rooms-Schedules-Using-Simulation
+        </a>
+        <p class="project-desc">
+          Simulation to analyze patient waiting times, queue lengths, and resource utilization.
+        </p>
+      </li>
+
+      <li>
+        <a href="https://github.com/alyssanew/Clothing-Shop-with-Pre-order-Function" target="_blank">
+          Clothing-Shop-with-Pre-order-Function
+        </a>
+        <p class="project-desc">
+          E-commerce clothing shop system with pre-order and inventory management.
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Certificates Section -->
+  <div class="section" id="certificates">
+    <h2><i class="fas fa-certificate"></i> Certificates</h2>
+    <div class="certificates">
+      <img src="assets/certificates/1871e5c3-1b1e-4ecf-b4f7-3504b21779e2.jpg" alt="Certificate 1">
+      <img src="assets/certificates/77cc25d0-f430-409e-89e3-9c0cde8578cc.jpg" alt="Certificate 2">
+      <img src="assets/certificates/8944f1de-ee50-4454-9bfa-95e3e461d37b.jpg" alt="Certificate 3">
+      <img src="assets/certificates/b8c5f923-975b-4f69-8b68-ae1b9f01e80b.jpg" alt="Certificate 4">
+    </div>
+  </div>
+
+  <!-- Full view modal for certificates -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
