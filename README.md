@@ -1,2 +1,2 @@
-# alyssa_alcantara.
+# alyssa_alcantara
 My Project Portfolio
