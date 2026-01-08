@@ -94,28 +94,23 @@ nav ul li a.active::after {
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
+/* ===================== HEADER TEXT ===================== */
 .header-text h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: 2.7rem;
-  font-weight: 800;
-  margin: 0 0 10px 0;
-  color: #0f172a; /* navy */
+  color: #0f172a; /* your name in dark navy */
 }
 
 .header-text .title {
-  font-size: 1.3rem;
+  color: #0f172a; /* make title below name readable */
   font-weight: 700;
-  color: #0f172a; /* navy */
-  margin-bottom: 15px;
 }
 
 .header-text .objective {
-  font-size: 1.05rem;
+  color: #0f172a; /* make objective readable */
   font-weight: 600;
-  color: #0f172a; /* navy */
+  font-size: 1.05rem;
   line-height: 1.6;
-  max-width: 600px;
 }
+
 
 /* ===================== SECTION CARDS ===================== */
 .section {
