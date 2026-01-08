@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: #0f172a;
   font-size: 1.1rem; /* slightly larger */
   font-weight: 700; /* bolder nav links */
   transition: all 0.3s ease;
