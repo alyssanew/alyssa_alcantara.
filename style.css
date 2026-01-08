@@ -1,12 +1,19 @@
 /* ===================== GLOBAL STYLES ===================== */
+/* ===================== GLOBAL STYLES ===================== */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background: #ffffff; /* white background */
-  color: #0f172a; /* navy/black text */
+  color: #0f172a; /* dark navy/black text */
   scroll-behavior: smooth;
   line-height: 1.7;
   font-size: 16px;
+  font-weight: 600; /* bolder body text */
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600; /* bolder links */
 }
 
 /* ===================== NAVIGATION BAR ===================== */
@@ -18,8 +25,9 @@ nav {
   padding: 15px 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-  border-bottom: 1px solid #1e293b; /* dark border */
+  border-bottom: 1px solid #1e293b;
   backdrop-filter: blur(5px);
+  font-weight: 700; /* bolder nav items */
 }
 
 nav ul {
@@ -35,17 +43,16 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #ffffff; /* white text */
-  font-weight: 600;
-  font-size: 1.05rem;
+  color: #ffffff;
+  font-size: 1.1rem; /* slightly larger */
+  font-weight: 700; /* bolder nav links */
   transition: all 0.3s ease;
   position: relative;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #3b82f6; /* light blue hover */
+  color: #3b82f6; /* bright blue hover */
 }
 
 nav ul li a.active::after {
@@ -53,7 +60,7 @@ nav ul li a.active::after {
   display: block;
   width: 100%;
   height: 3px;
-  background: #3b82f6; /* underline light blue */
+  background: #3b82f6;
   border-radius: 2px;
   margin-top: 5px;
 }
@@ -67,9 +74,10 @@ nav ul li a.active::after {
   color: #ffffff; /* white text */
   padding: 40px 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   flex-wrap: wrap;
   margin-top: 60px;
+  font-weight: 700; /* bolder header text */
 }
 
 .profile-pic img {
@@ -83,34 +91,35 @@ nav ul li a.active::after {
 
 .profile-pic img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 .header-text h1 {
   font-family: 'Inter', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.7rem; /* slightly larger */
+  font-weight: 800; /* extra bold */
   margin: 0 0 10px 0;
   color: #ffffff;
 }
 
 .header-text .title {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #d1d5db; /* light gray text */
+  font-size: 1.3rem;
+  font-weight: 700; /* bolder */
+  color: #cbd5e1;
   margin-bottom: 15px;
 }
 
 .header-text .objective {
-  font-size: 1rem;
-  color: #cbd5e1; /* lighter gray */
+  font-size: 1.05rem;
+  font-weight: 600; /* bold body text */
+  color: #e2e8f0;
   line-height: 1.6;
   max-width: 600px;
 }
 
 /* ===================== SECTION CARDS ===================== */
 .section {
-  background: #f8fafc; /* almost white */
+  background: #f8fafc; 
   margin: 40px auto;
   padding: 40px 35px;
   border-radius: 20px;
@@ -119,6 +128,7 @@ nav ul li a.active::after {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
+  font-weight: 600; /* bold text */
 }
 
 .section.visible {
@@ -128,18 +138,18 @@ nav ul li a.active::after {
 
 .section h2 {
   font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  color: #0f172a; /* navy heading */
-  border-bottom: 3px solid #1e293b; /* dark underline */
+  font-size: 2.2rem;
+  color: #0f172a;
+  border-bottom: 3px solid #1e293b;
   display: inline-block;
   padding-bottom: 5px;
-  font-weight: 700;
+  font-weight: 800; /* extra bold headings */
   margin-bottom: 20px;
 }
 
 p {
-  color: #1e293b; /* dark text */
-  font-weight: 400;
+  color: #1e293b;
+  font-weight: 600; /* bold paragraphs */
   font-size: 1rem;
 }
 
@@ -150,12 +160,13 @@ ul {
 }
 
 li {
-  background: #ffffff; /* white cards */
+  background: #ffffff;
   margin: 15px 0;
   padding: 20px 25px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600; /* bold list items */
 }
 
 li:hover {
@@ -164,21 +175,38 @@ li:hover {
 }
 
 li a {
-  color: #0f172a; /* navy link */
-  font-weight: 600;
-  font-size: 1.05rem;
-  text-decoration: none;
+  color: #0f172a;
+  font-weight: 700; /* bolder links */
+  font-size: 1.1rem;
 }
 
 li a:hover {
-  color: #3b82f6; /* blue hover */
+  color: #3b82f6;
 }
 
 .project-desc {
-  color: #475569; /* gray description */
+  color: #475569;
   font-size: 0.95rem;
   margin-top: 8px;
   max-width: 700px;
+  font-weight: 600;
+}
+
+/* ===================== BUTTONS ===================== */
+.button {
+  display: inline-block;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 700; /* bold button text */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
 }
 
 /* ===================== CERTIFICATES ===================== */
@@ -186,20 +214,22 @@ li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .certificates img {
   width: 300px;
   height: 150px;
-  margin: 15px;
   border-radius: 15px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #0f172a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .certificates img:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  border-color: #3b82f6;
 }
 
 /* Modal */
@@ -261,7 +291,7 @@ li a:hover {
   }
 
   nav ul li a {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 
