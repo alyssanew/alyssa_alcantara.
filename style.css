@@ -4,16 +4,17 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background: #ffffff; /* white background */
-  color: #0f172a; /* dark navy/black text */
+  color: #0f172a; /* navy text */
   scroll-behavior: smooth;
   line-height: 1.7;
   font-size: 16px;
-  font-weight: 600; /* bolder body text */
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
-  font-weight: 600; /* bolder links */
+  font-weight: 600;
+  color: #0f172a; /* navy links globally */
 }
 
 /* ===================== NAVIGATION BAR ===================== */
@@ -21,13 +22,12 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #0f172a; /* navy blue nav */
+  background-color: #e5e7eb; /* light gray/navy contrast */
   padding: 15px 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.15);
   border-bottom: 1px solid #1e293b;
   backdrop-filter: blur(5px);
-  font-weight: 700; /* bolder nav items */
 }
 
 nav ul {
@@ -43,16 +43,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #0f172a;
-  font-size: 1.1rem; /* slightly larger */
-  font-weight: 700; /* bolder nav links */
+  color: #0f172a; /* navy text */
+  font-size: 1.1rem;
+  font-weight: 700;
   transition: all 0.3s ease;
   position: relative;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #3b82f6; /* bright blue hover */
+  color: #0f172a; /* hover remains navy */
 }
 
 nav ul li a.active::after {
@@ -60,7 +60,7 @@ nav ul li a.active::after {
   display: block;
   width: 100%;
   height: 3px;
-  background: #3b82f6;
+  background: #0f172a; /* navy underline */
   border-radius: 2px;
   margin-top: 5px;
 }
@@ -70,14 +70,14 @@ nav ul li a.active::after {
   display: flex;
   align-items: center;
   gap: 25px;
-  background: #0f172a; /* navy background */
-  color: #0f172a; /* white text */
+  background: #f1f5f9; /* light gray for contrast */
+  color: #0f172a; /* navy text */
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   flex-wrap: wrap;
   margin-top: 60px;
-  font-weight: 700; /* bolder header text */
+  font-weight: 700;
 }
 
 .profile-pic img {
@@ -85,7 +85,7 @@ nav ul li a.active::after {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ffffff;
+  border: 3px solid #0f172a; /* navy border */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -96,23 +96,23 @@ nav ul li a.active::after {
 
 .header-text h1 {
   font-family: 'Inter', sans-serif;
-  font-size: 2.7rem; /* slightly larger */
-  font-weight: 800; /* extra bold */
+  font-size: 2.7rem;
+  font-weight: 800;
   margin: 0 0 10px 0;
-  color: #0f172a;
+  color: #0f172a; /* navy */
 }
 
 .header-text .title {
   font-size: 1.3rem;
-  font-weight: 700; /* bolder */
-  color: #cbd5e1;
+  font-weight: 700;
+  color: #0f172a; /* navy */
   margin-bottom: 15px;
 }
 
 .header-text .objective {
   font-size: 1.05rem;
-  font-weight: 600; /* bold body text */
-  color: #e2e8f0;
+  font-weight: 600;
+  color: #0f172a; /* navy */
   line-height: 1.6;
   max-width: 600px;
 }
@@ -128,7 +128,8 @@ nav ul li a.active::after {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
-  font-weight: 600; /* bold text */
+  font-weight: 600;
+  color: #0f172a; /* navy text */
 }
 
 .section.visible {
@@ -139,17 +140,17 @@ nav ul li a.active::after {
 .section h2 {
   font-family: 'Inter', sans-serif;
   font-size: 2.2rem;
-  color: #0f172a;
-  border-bottom: 3px solid #1e293b;
+  color: #0f172a; /* navy */
+  border-bottom: 3px solid #0f172a; /* navy underline */
   display: inline-block;
   padding-bottom: 5px;
-  font-weight: 800; /* extra bold headings */
+  font-weight: 800; 
   margin-bottom: 20px;
 }
 
 p {
-  color: #1e293b;
-  font-weight: 600; /* bold paragraphs */
+  color: #0f172a; /* navy */
+  font-weight: 600;
   font-size: 1rem;
 }
 
@@ -166,7 +167,8 @@ li {
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-weight: 600; /* bold list items */
+  font-weight: 600;
+  color: #0f172a; /* navy */
 }
 
 li:hover {
@@ -175,17 +177,17 @@ li:hover {
 }
 
 li a {
-  color: #0f172a;
-  font-weight: 700; /* bolder links */
+  color: #0f172a; 
+  font-weight: 700;
   font-size: 1.1rem;
 }
 
 li a:hover {
-  color: #3b82f6;
+  color: #0f172a; /* navy hover */
 }
 
 .project-desc {
-  color: #475569;
+  color: #0f172a; /* navy */
   font-size: 0.95rem;
   margin-top: 8px;
   max-width: 700px;
@@ -196,16 +198,16 @@ li a:hover {
 .button {
   display: inline-block;
   background-color: #0f172a;
-  color: #ffffff;
+  color: #ffffff; /* button text stays white for contrast */
   padding: 12px 25px;
   border-radius: 8px;
-  font-weight: 700; /* bold button text */
+  font-weight: 700;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #3b82f6;
+  background-color: #0a3b75; /* darker navy hover */
   color: #ffffff;
 }
 
@@ -229,7 +231,7 @@ li a:hover {
 .certificates img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  border-color: #3b82f6;
+  border-color: #0f172a;
 }
 
 /* Modal */
@@ -258,7 +260,7 @@ li a:hover {
   position: absolute;
   top: 25px;
   right: 35px;
-  color: #fff;
+  color: #0f172a; /* navy close button */
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
@@ -294,5 +296,3 @@ li a:hover {
     font-size: 1rem;
   }
 }
-
-
