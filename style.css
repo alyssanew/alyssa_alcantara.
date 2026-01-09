@@ -1,17 +1,11 @@
-/* ===================== COLOR SYSTEM ===================== */
+/* ===================== COLORS ===================== */
 :root {
-  --bg-main: #fdf2f8;      /* light pink background */
-  --bg-card: #ffffff;     /* clean cards */
-  --bg-white: #ffffff;
-
-  --text-main: #0f172a;
-  --text-muted: #475569;
-
-  --accent: #1e293b;
-  --accent-soft: #334155;
-
-  --border-soft: #f1dce8;
-
+  --bg-main: #fdf2f8;     /* soft pink background */
+  --bg-card: #ffffff;     /* card surfaces */
+  --text-main: #1e293b;   /* dark slate text */
+  --text-muted: #475569;  /* secondary text */
+  --accent: #7c3aed;      /* violet accent */
+  --border-soft: #f3e8ff; /* soft borders / dividers */
   --shadow-soft: 0 10px 25px rgba(0,0,0,0.08);
   --shadow-hover: 0 18px 40px rgba(0,0,0,0.12);
 }
@@ -39,11 +33,11 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(30,41,59,0.95); /* dark slate */
   padding: 16px 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  box-shadow: var(--shadow-soft);
 }
 
 nav ul {
@@ -84,7 +78,7 @@ nav ul li a.active::after {
   display: flex;
   align-items: center;
   gap: 32px;
-  background: linear-gradient(135deg, #ffffff, #fce7f3);
+  background: #ffe4f0; /* very soft pink */
   padding: 50px;
   border-radius: 24px;
   box-shadow: var(--shadow-soft);
@@ -124,7 +118,7 @@ nav ul li a.active::after {
 
 /* ===================== SECTIONS ===================== */
 .section {
-  background: var(--bg-card);
+  background: #ffffff; /* cards remain neutral over pink bg */
   margin: 80px auto;
   padding: 50px;
   border-radius: 22px;
@@ -139,7 +133,6 @@ nav ul li a.active::after {
   box-shadow: var(--shadow-hover);
 }
 
-/* accent bar */
 .section::before {
   content: '';
   position: absolute;
@@ -180,7 +173,7 @@ ul {
 }
 
 li {
-  background: var(--bg-white);
+  background: #ffffff;
   margin: 18px 0;
   padding: 26px;
   border-radius: 18px;
@@ -248,4 +241,50 @@ li a {
   display: none;
   position: fixed;
   inset: 0;
-  background-col
+  background-color: rgba(0,0,0,0.9);
+  z-index: 2000;
+}
+
+.modal-content {
+  max-width: 85%;
+  max-height: 85%;
+  margin: auto;
+  border-radius: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 28px;
+  right: 38px;
+  font-size: 36px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 768px) {
+  .header-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .section {
+    margin: 60px 20px;
+    padding: 35px;
+  }
+
+  .section::before {
+    display: none;
+  }
+
+  .certificates img {
+    width: 250px;
+    height: 130px;
+  }
+
+  nav ul li {
+    margin: 0 16px;
+  }
+}
+
